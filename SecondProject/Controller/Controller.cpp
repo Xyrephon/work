@@ -7,6 +7,7 @@
 //
 
 #include "Controller.hpp"
+#include "../Model/Timer.hpp"
 #include <iostream>
 
 using namespace std;
@@ -27,6 +28,8 @@ void Controller :: changeWithPointer(int * numberPointedTo)
 
 void Controller :: start()
 {
+    Timer sillyTime;
+    sillyTime.startTimer();
     cout << "Students said to say hello world" << endl;
     int myNumber = 72;
     
@@ -43,6 +46,11 @@ void Controller :: start()
     changeNumberAgain(numberPointer);
     cout << "I changed it yet again to this! " << myNumber << endl;
     
+    sillyTime.stopTimer();
+    sillyTime.displayTimerInformation();
+    
+    sillyTime.resetTimer();
+    cout << sillyTime.getExecutionTimeInMicroseconds() << endl;
 }
 
 void Controller :: tryNumbers(int sent)
