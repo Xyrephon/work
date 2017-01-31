@@ -22,7 +22,7 @@ public:
     void stopTimer();
     void resetTimer();
     void displayTimerInformation();
-    long getExectionTimeInMicroseconds();
+    long getExecutionTimeInMicroseconds();
 };
 
 #endif /* Timer_hpp */
