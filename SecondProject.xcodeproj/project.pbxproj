@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931E6C021E40EC71006CB546 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931E6C001E40EC71006CB546 /* Timer.cpp */; };
 		93DE8F8D1E3B9A93008C9BE4 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE8F8B1E3B9A93008C9BE4 /* Controller.cpp */; };
 		93DE8F921E3B9ACC008C9BE4 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93DE8F911E3B9ACC008C9BE4 /* Runner.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		931E6C001E40EC71006CB546 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = SecondProject/Model/Timer.cpp; sourceTree = "<group>"; };
+		931E6C011E40EC71006CB546 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = SecondProject/Model/Timer.hpp; sourceTree = "<group>"; };
 		93DE8F7C1E3B98F7008C9BE4 /* SecondProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SecondProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DE8F8B1E3B9A93008C9BE4 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Controller.cpp; path = Controller/Controller.cpp; sourceTree = "<group>"; };
 		93DE8F8C1E3B9A93008C9BE4 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Controller.hpp; path = Controller/Controller.hpp; sourceTree = "<group>"; };
@@ -41,9 +44,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931E6BFF1E40EC45006CB546 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				931E6C001E40EC71006CB546 /* Timer.cpp */,
+				931E6C011E40EC71006CB546 /* Timer.hpp */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		93DE8F731E3B98F7008C9BE4 = {
 			isa = PBXGroup;
 			children = (
+				931E6BFF1E40EC45006CB546 /* Model */,
+				93DE8F931E3B9CB4008C9BE4 /* Controller */,
 				93DE8F7E1E3B98F7008C9BE4 /* SecondProject */,
 				93DE8F7D1E3B98F7008C9BE4 /* Products */,
 			);
@@ -60,7 +74,6 @@
 		93DE8F7E1E3B98F7008C9BE4 /* SecondProject */ = {
 			isa = PBXGroup;
 			children = (
-				93DE8F931E3B9CB4008C9BE4 /* Controller */,
 			);
 			path = SecondProject;
 			sourceTree = "<group>";
@@ -73,6 +86,7 @@
 				93DE8F911E3B9ACC008C9BE4 /* Runner.cpp */,
 			);
 			name = Controller;
+			path = SecondProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931E6C021E40EC71006CB546 /* Timer.cpp in Sources */,
 				93DE8F8D1E3B9A93008C9BE4 /* Controller.cpp in Sources */,
 				93DE8F921E3B9ACC008C9BE4 /* Runner.cpp in Sources */,
 			);
@@ -260,6 +275,7 @@
 				93DE8F851E3B98F7008C9BE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
