@@ -28,6 +28,9 @@ void Controller :: changeWithPointer(int * numberPointedTo)
 
 void Controller :: start()
 {
+    int derp [6] {0, 1, 2, 3, 4, 45};
+    int pie [2] = {0, 1};
+    
     Timer sillyTime;
     sillyTime.startTimer();
     cout << "Students said to say hello world" << endl;
