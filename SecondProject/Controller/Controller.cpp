@@ -9,6 +9,7 @@
 #include "Controller.hpp"
 #include "../Model/Timer.hpp"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -19,6 +20,15 @@ int Controller :: changeNumber()
     cin >> derpy;
     
     return derpy;
+}
+
+void Controller :: testingCStrings()
+{
+    string J = "Jonah";
+    cout << J.size() << endl;
+    cout << J.empty() << endl;
+    cout << J.substr(0, 3) << endl;
+    
 }
 
 void Controller :: changeWithPointer(int * numberPointedTo)

@@ -16,6 +16,7 @@ private:
     int changeNumber();
     void changeWithPointer (int * numberPointer);
     void changeNumberAgain(int * numberChanged);
+    void testingCStrings();
 public:
     void start();
 };
